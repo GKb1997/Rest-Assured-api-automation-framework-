@@ -1,0 +1,132 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "summary": {
+          "type": "object",
+          "properties": {
+            "currentValue": {
+              "type": "integer"
+            },
+            "investedValue": {
+              "type": "integer"
+            },
+            "returnsValue": {
+              "type": "integer"
+            },
+            "returnsAbsolutePer": {
+              "type": "integer"
+            },
+            "xirr": {
+              "type": "integer"
+            },
+            "returns1MonthPer": {
+              "type": "integer"
+            },
+            "returns3MonthPer": {
+              "type": "integer"
+            },
+            "returns6MonthPer": {
+              "type": "integer"
+            },
+            "returns1YearPer": {
+              "type": "integer"
+            },
+            "returns3YearPer": {
+              "type": "integer"
+            },
+            "totalSips": {
+              "type": "integer"
+            },
+            "totalLumpsums": {
+              "type": "integer"
+            },
+            "previousDayReturns": {
+              "type": "integer"
+            },
+            "previousDayReturnPercentage": {
+              "type": "integer"
+            },
+            "shortTermGain": {
+              "type": "integer"
+            },
+            "longTermGain": {
+              "type": "integer"
+            },
+            "lastImportPending": {
+              "type": "boolean"
+            },
+            "lastSuccessfullImportTs": {
+              "type": "integer"
+            },
+            "lastImportTs": {
+              "type": "integer"
+            },
+            "lastImportStatus": {
+              "type": "string"
+            },
+            "isEquityPortfolioFlag": {
+              "type": "boolean"
+            },
+            "benchmarkCoCode": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "currentValue",
+            "investedValue",
+            "returnsValue",
+            "returnsAbsolutePer",
+            "xirr",
+            "returns1MonthPer",
+            "returns3MonthPer",
+            "returns6MonthPer",
+            "returns1YearPer",
+            "returns3YearPer",
+            "totalSips",
+            "totalLumpsums",
+            "previousDayReturns",
+            "previousDayReturnPercentage",
+            "shortTermGain",
+            "longTermGain",
+            "lastImportPending",
+            "lastSuccessfullImportTs",
+            "lastImportTs",
+            "lastImportStatus",
+            "isEquityPortfolioFlag",
+            "benchmarkCoCode"
+          ]
+        },
+        "folioHoldings": {
+          "type": "null"
+        },
+        "distributions": {
+          "type": "null"
+        }
+      },
+      "required": [
+        "summary",
+        "folioHoldings",
+        "distributions"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "success",
+    "data",
+    "message"
+  ]
+}

@@ -1,0 +1,410 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "string",
+      "properties": {
+        "applicationNo": {
+          "type": "string"
+        },
+        "clientId": {
+          "type": "string"
+        },
+        "pan": {
+          "type": "string"
+        },
+        "countryCode": {
+          "type": "string"
+        },
+        "mobile": {
+          "type": "string"
+        },
+        "active": {
+          "type": "boolean"
+        },
+        "clientAccountType": {
+          "type": "string"
+        },
+        "clientAccountSubType": {
+          "type": "string"
+        },
+        "userType": {
+          "type": "string"
+        },
+        "dpNumber": {
+          "type": "string"
+        },
+        "poaStatus": {
+          "type": "string"
+        },
+        "ddpiStatus": {
+          "type": "boolean"
+        },
+        "clientDetails": {
+          "type": "object",
+          "properties": {
+            "fullName": {
+              "type": "string"
+            },
+            "fatherName": {
+              "type": "string"
+            },
+            "email": {
+              "type": "string"
+            },
+            "subBroker": {
+              "type": "string"
+            },
+            "shortName": {
+              "type": "string"
+            },
+            "birthdate": {
+              "type": "string"
+            },
+            "gender": {
+              "type": "string"
+            },
+            "permanentAddress": {
+              "type": "object",
+              "properties": {
+                "addressLine1": {
+                  "type": "string"
+                },
+                "addressLine2": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "pincode": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "addressLine1",
+                "addressLine2",
+                "city",
+                "state",
+                "country",
+                "pincode"
+              ]
+            },
+            "correspondenceAddress": {
+              "type": "object",
+              "properties": {
+                "addressLine1": {
+                  "type": "string"
+                },
+                "addressLine2": {
+                  "type": "string"
+                },
+                "city": {
+                  "type": "string"
+                },
+                "state": {
+                  "type": "string"
+                },
+                "country": {
+                  "type": "string"
+                },
+                "pincode": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "addressLine1",
+                "addressLine2",
+                "city",
+                "state",
+                "country",
+                "pincode"
+              ]
+            },
+            "contactUsPhone": {
+              "type": "string"
+            },
+            "incomeSlab": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "fullName",
+            "fatherName",
+            "email",
+            "subBroker",
+            "shortName",
+            "birthdate",
+            "gender",
+            "permanentAddress",
+            "correspondenceAddress",
+            "contactUsPhone",
+            "incomeSlab"
+          ]
+        },
+        "activeSegments": {
+          "type": "object",
+          "properties": {
+            "equity": {
+              "type": "boolean"
+            },
+            "futures": {
+              "type": "boolean"
+            },
+            "currency": {
+              "type": "boolean"
+            },
+            "commodity": {
+              "type": "boolean"
+            },
+            "mutualFund": {
+              "type": "boolean"
+            },
+            "ipo": {
+              "type": "boolean"
+            },
+            "NSX": {
+              "type": "boolean"
+            },
+            "BSX": {
+              "type": "boolean"
+            },
+            "MCX": {
+              "type": "boolean"
+            },
+            "MCD": {
+              "type": "boolean"
+            },
+            "BSE": {
+              "type": "boolean"
+            },
+            "NSE": {
+              "type": "boolean"
+            },
+            "NCX": {
+              "type": "boolean"
+            },
+            "BSEFO": {
+              "type": "boolean"
+            },
+            "NSEFO": {
+              "type": "boolean"
+            },
+            "NCE": {
+              "type": "boolean"
+            }
+          },
+          "required": [
+            "equity",
+            "futures",
+            "currency",
+            "commodity",
+            "mutualFund",
+            "ipo",
+            "NSX",
+            "BSX",
+            "MCX",
+            "MCD",
+            "BSE",
+            "NSE",
+            "NCX",
+            "BSEFO",
+            "NSEFO",
+            "NCE"
+          ]
+        },
+        "dpDetails": {
+          "type": "object",
+          "properties": {
+            "dpIdNo": {
+              "type": "string"
+            },
+            "dpType": {
+              "type": "string"
+            },
+            "dpIdStatus": {
+              "type": "string"
+            },
+            "boAccountNo": {
+              "type": "string"
+            },
+            "dpName": {
+              "type": "string"
+            },
+            "dpSchemeName": {
+              "type": "string"
+            },
+            "ddpiStatus": {
+              "type": "boolean"
+            },
+            "poaStatus": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "dpIdNo",
+            "dpType",
+            "dpIdStatus",
+            "boAccountNo",
+            "dpName",
+            "dpSchemeName",
+            "ddpiStatus",
+            "poaStatus"
+          ]
+        },
+        "dpDetailsV2": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "dpIdNo": {
+                  "type": "string"
+                },
+                "dpType": {
+                  "type": "string"
+                },
+                "dpIdStatus": {
+                  "type": "string"
+                },
+                "boAccountNo": {
+                  "type": "string"
+                },
+                "dpName": {
+                  "type": "string"
+                },
+                "dpSchemeName": {
+                  "type": "string"
+                },
+                "ddpiStatus": {
+                  "type": "boolean"
+                },
+                "poaStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "dpIdNo",
+                "dpType",
+                "dpIdStatus",
+                "boAccountNo",
+                "dpName",
+                "dpSchemeName",
+                "ddpiStatus",
+                "poaStatus"
+              ]
+            }
+          ]
+        },
+        "nomineeDetails": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "name": {
+                  "type": "string"
+                },
+                "percentageOfShares": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "name",
+                "percentageOfShares"
+              ]
+            }
+          ]
+        },
+        "creationDate": {
+          "type": "string"
+        },
+        "inactiveDate": {
+          "type": "string"
+        },
+        "products": {
+          "type": "object",
+          "properties": {
+            "intraday": {
+              "type": "object"
+            },
+            "mtf": {
+              "type": "object",
+              "properties": {
+                "status": {
+                  "type": "string"
+                },
+                "activationDate": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "status",
+                "activationDate"
+              ]
+            },
+            "commodityOptions": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "intraday",
+            "mtf",
+            "commodityOptions"
+          ]
+        },
+        "fundSettlementFrequency": {
+          "type": "string"
+        },
+        "mtf_auto_release_status": {
+          "type": "string"
+        }
+      },
+      "required": [
+        "applicationNo",
+        "clientId",
+        "pan",
+        "countryCode",
+        "mobile",
+        "active",
+        "clientAccountType",
+        "clientAccountSubType",
+        "userType",
+        "dpNumber",
+        "poaStatus",
+        "ddpiStatus",
+        "clientDetails",
+        "activeSegments",
+        "dpDetails",
+        "dpDetailsV2",
+        "nomineeDetails",
+        "creationDate",
+        "inactiveDate",
+        "products",
+        "fundSettlementFrequency",
+        "mtf_auto_release_status"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "success",
+    "data",
+    "message"
+  ]
+}

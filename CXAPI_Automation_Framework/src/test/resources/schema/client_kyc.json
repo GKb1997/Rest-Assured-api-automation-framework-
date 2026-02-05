@@ -1,0 +1,417 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "clientCode": {
+          "type": "string"
+        },
+        "pan": {
+          "type": "string"
+        },
+        "isPanAadhaarSeeded": {
+          "type": "boolean"
+        },
+        "isTradeReady": {
+          "type": "boolean"
+        },
+        "kra_info": {
+          "type": "object"
+        },
+        "cdsl_info": {
+          "type": "object"
+        },
+        "nse_info": {
+          "type": "object"
+        },
+        "bse_info": {
+          "type": "object"
+        },
+        "boSegmentDetails": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            },
+            {
+              "type": "object",
+              "properties": {
+                "exchange": {
+                  "type": "string"
+                },
+                "segment": {
+                  "type": "string"
+                },
+                "activeFrom": {
+                  "type": "string"
+                },
+                "inactiveFrom": {
+                  "type": "string"
+                },
+                "deactivationStatus": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "exchange",
+                "segment",
+                "activeFrom",
+                "inactiveFrom",
+                "deactivationStatus"
+              ]
+            }
+          ]
+        }
+      },
+      "required": [
+        "clientCode",
+        "pan",
+        "isPanAadhaarSeeded",
+        "isTradeReady",
+        "kra_info",
+        "cdsl_info",
+        "nse_info",
+        "bse_info",
+        "boSegmentDetails"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "success",
+    "data",
+    "message"
+  ]
+}

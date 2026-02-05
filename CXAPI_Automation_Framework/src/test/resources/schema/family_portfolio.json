@@ -1,0 +1,1341 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "TotalSummary": {
+          "type": "object",
+          "properties": {
+            "TotalHolding": {
+              "type": "integer"
+            },
+            "TotalInvValue": {
+              "type": "integer"
+            },
+            "TotalActiveInvValue": {
+              "type": "integer"
+            },
+            "TotalInactiveInvValue": {
+              "type": "integer"
+            },
+            "TotalGL": {
+              "type": "number"
+            },
+            "TotalGLPer": {
+              "type": "number"
+            },
+            "TotalDayGL": {
+              "type": "number"
+            },
+            "TotalDayGLPer": {
+              "type": "number"
+            }
+          },
+          "required": [
+            "TotalHolding",
+            "TotalInvValue",
+            "TotalActiveInvValue",
+            "TotalInactiveInvValue",
+            "TotalGL",
+            "TotalGLPer",
+            "TotalDayGL",
+            "TotalDayGLPer"
+          ]
+        },
+        "EquityPortfolio": {
+          "type": "object",
+          "properties": {
+            "HoldingDetail": {
+              "type": "array",
+              "items": [
+                {
+                  "type": "object",
+                  "properties": {
+                    "AvlQty": {
+                      "type": "integer"
+                    },
+                    "tokenID": {
+                      "type": "string"
+                    },
+                    "AvlQtyDisp": {
+                      "type": "string"
+                    },
+                    "ch": {
+                      "type": "integer"
+                    },
+                    "avgPrice": {
+                      "type": "number"
+                    },
+                    "CoCode": {
+                      "type": "string"
+                    },
+                    "AsOnDate": {
+                      "type": "string"
+                    },
+                    "ltp": {
+                      "type": "number"
+                    },
+                    "chp": {
+                      "type": "number"
+                    },
+                    "compName": {
+                      "type": "string"
+                    },
+                    "dayGL": {
+                      "type": "number"
+                    },
+                    "invValue": {
+                      "type": "integer"
+                    },
+                    "precsn": {
+                      "type": "integer"
+                    },
+                    "exchName": {
+                      "type": "string"
+                    },
+                    "mktSegID": {
+                      "type": "integer"
+                    },
+                    "UNR_Ch": {
+                      "type": "number"
+                    },
+                    "curMktValue": {
+                      "type": "integer"
+                    },
+                    "qty": {
+                      "type": "integer"
+                    },
+                    "total_qty": {
+                      "type": "integer"
+                    },
+                    "astCls": {
+                      "type": "string"
+                    },
+                    "details": {
+                      "type": "string"
+                    },
+                    "symbolName": {
+                      "type": "string"
+                    },
+                    "instName": {
+                      "type": "string"
+                    },
+                    "UNR_Chp": {
+                      "type": "number"
+                    },
+                    "isin": {
+                      "type": "string"
+                    },
+                    "realizedGL": {
+                      "type": "integer"
+                    },
+                    "partyCode": {
+                      "type": "string"
+                    },
+                    "dpholding": {
+                      "type": "integer"
+                    },
+                    "series": {
+                      "type": "string"
+                    },
+                    "priceTick": {
+                      "type": "string"
+                    },
+                    "tradeSymbol": {
+                      "type": "string"
+                    },
+                    "isCashWithFnO": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagPresent": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagShortCode": {
+                      "type": "string"
+                    },
+                    "pool_holding": {
+                      "type": "integer"
+                    },
+                    "cusa": {
+                      "type": "integer"
+                    },
+                    "pledge": {
+                      "type": "integer"
+                    },
+                    "margin": {
+                      "type": "integer"
+                    },
+                    "sector": {
+                      "type": "string"
+                    },
+                    "mktCap": {
+                      "type": "string"
+                    },
+                    "stkId": {
+                      "type": "string"
+                    },
+                    "baseQty": {
+                      "type": "integer"
+                    },
+                    "baseAvgPrice": {
+                      "type": "number"
+                    },
+                    "blockedQty": {
+                      "type": "integer"
+                    },
+                    "bonusQty": {
+                      "type": "integer"
+                    },
+                    "bod_free_qty": {
+                      "type": "integer"
+                    },
+                    "dbq": {
+                      "type": "integer"
+                    },
+                    "dsq": {
+                      "type": "integer"
+                    },
+                    "dbap": {
+                      "type": "integer"
+                    },
+                    "dsap": {
+                      "type": "integer"
+                    },
+                    "dbq_t1": {
+                      "type": "integer"
+                    },
+                    "dsq_t1": {
+                      "type": "integer"
+                    },
+                    "dbap_t1": {
+                      "type": "integer"
+                    },
+                    "dsap_t1": {
+                      "type": "integer"
+                    },
+                    "dbq_t0": {
+                      "type": "integer"
+                    },
+                    "dsq_t0": {
+                      "type": "integer"
+                    },
+                    "dbap_t0": {
+                      "type": "integer"
+                    },
+                    "dsap_t0": {
+                      "type": "integer"
+                    },
+                    "buy_auction_qty": {
+                      "type": "integer"
+                    },
+                    "event": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "arq": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "prevClose": {
+                      "type": "number"
+                    },
+                    "isETF": {
+                      "type": "boolean"
+                    },
+                    "isActive": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "AvlQty",
+                    "tokenID",
+                    "AvlQtyDisp",
+                    "ch",
+                    "avgPrice",
+                    "CoCode",
+                    "AsOnDate",
+                    "ltp",
+                    "chp",
+                    "compName",
+                    "dayGL",
+                    "invValue",
+                    "precsn",
+                    "exchName",
+                    "mktSegID",
+                    "UNR_Ch",
+                    "curMktValue",
+                    "qty",
+                    "total_qty",
+                    "astCls",
+                    "details",
+                    "symbolName",
+                    "instName",
+                    "UNR_Chp",
+                    "isin",
+                    "realizedGL",
+                    "partyCode",
+                    "dpholding",
+                    "series",
+                    "priceTick",
+                    "tradeSymbol",
+                    "isCashWithFnO",
+                    "surveyIndicatorTagPresent",
+                    "surveyIndicatorTagShortCode",
+                    "pool_holding",
+                    "cusa",
+                    "pledge",
+                    "margin",
+                    "sector",
+                    "mktCap",
+                    "stkId",
+                    "baseQty",
+                    "baseAvgPrice",
+                    "blockedQty",
+                    "bonusQty",
+                    "bod_free_qty",
+                    "dbq",
+                    "dsq",
+                    "dbap",
+                    "dsap",
+                    "dbq_t1",
+                    "dsq_t1",
+                    "dbap_t1",
+                    "dsap_t1",
+                    "dbq_t0",
+                    "dsq_t0",
+                    "dbap_t0",
+                    "dsap_t0",
+                    "buy_auction_qty",
+                    "event",
+                    "arq",
+                    "prevClose",
+                    "isETF",
+                    "isActive"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "AvlQty": {
+                      "type": "integer"
+                    },
+                    "tokenID": {
+                      "type": "string"
+                    },
+                    "AvlQtyDisp": {
+                      "type": "string"
+                    },
+                    "ch": {
+                      "type": "integer"
+                    },
+                    "avgPrice": {
+                      "type": "number"
+                    },
+                    "CoCode": {
+                      "type": "string"
+                    },
+                    "AsOnDate": {
+                      "type": "string"
+                    },
+                    "ltp": {
+                      "type": "number"
+                    },
+                    "chp": {
+                      "type": "number"
+                    },
+                    "compName": {
+                      "type": "string"
+                    },
+                    "dayGL": {
+                      "type": "number"
+                    },
+                    "invValue": {
+                      "type": "integer"
+                    },
+                    "precsn": {
+                      "type": "integer"
+                    },
+                    "exchName": {
+                      "type": "string"
+                    },
+                    "mktSegID": {
+                      "type": "integer"
+                    },
+                    "UNR_Ch": {
+                      "type": "number"
+                    },
+                    "curMktValue": {
+                      "type": "integer"
+                    },
+                    "qty": {
+                      "type": "integer"
+                    },
+                    "total_qty": {
+                      "type": "integer"
+                    },
+                    "astCls": {
+                      "type": "string"
+                    },
+                    "details": {
+                      "type": "string"
+                    },
+                    "symbolName": {
+                      "type": "string"
+                    },
+                    "instName": {
+                      "type": "string"
+                    },
+                    "UNR_Chp": {
+                      "type": "number"
+                    },
+                    "isin": {
+                      "type": "string"
+                    },
+                    "realizedGL": {
+                      "type": "integer"
+                    },
+                    "partyCode": {
+                      "type": "string"
+                    },
+                    "dpholding": {
+                      "type": "integer"
+                    },
+                    "series": {
+                      "type": "string"
+                    },
+                    "priceTick": {
+                      "type": "string"
+                    },
+                    "tradeSymbol": {
+                      "type": "string"
+                    },
+                    "isCashWithFnO": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagPresent": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagShortCode": {
+                      "type": "string"
+                    },
+                    "pool_holding": {
+                      "type": "integer"
+                    },
+                    "cusa": {
+                      "type": "integer"
+                    },
+                    "pledge": {
+                      "type": "integer"
+                    },
+                    "margin": {
+                      "type": "integer"
+                    },
+                    "sector": {
+                      "type": "string"
+                    },
+                    "mktCap": {
+                      "type": "string"
+                    },
+                    "stkId": {
+                      "type": "string"
+                    },
+                    "baseQty": {
+                      "type": "integer"
+                    },
+                    "baseAvgPrice": {
+                      "type": "number"
+                    },
+                    "blockedQty": {
+                      "type": "integer"
+                    },
+                    "bonusQty": {
+                      "type": "integer"
+                    },
+                    "bod_free_qty": {
+                      "type": "integer"
+                    },
+                    "dbq": {
+                      "type": "integer"
+                    },
+                    "dsq": {
+                      "type": "integer"
+                    },
+                    "dbap": {
+                      "type": "integer"
+                    },
+                    "dsap": {
+                      "type": "integer"
+                    },
+                    "dbq_t1": {
+                      "type": "integer"
+                    },
+                    "dsq_t1": {
+                      "type": "integer"
+                    },
+                    "dbap_t1": {
+                      "type": "integer"
+                    },
+                    "dsap_t1": {
+                      "type": "integer"
+                    },
+                    "dbq_t0": {
+                      "type": "integer"
+                    },
+                    "dsq_t0": {
+                      "type": "integer"
+                    },
+                    "dbap_t0": {
+                      "type": "integer"
+                    },
+                    "dsap_t0": {
+                      "type": "integer"
+                    },
+                    "buy_auction_qty": {
+                      "type": "integer"
+                    },
+                    "event": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "arq": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "prevClose": {
+                      "type": "number"
+                    },
+                    "isETF": {
+                      "type": "boolean"
+                    },
+                    "isActive": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "AvlQty",
+                    "tokenID",
+                    "AvlQtyDisp",
+                    "ch",
+                    "avgPrice",
+                    "CoCode",
+                    "AsOnDate",
+                    "ltp",
+                    "chp",
+                    "compName",
+                    "dayGL",
+                    "invValue",
+                    "precsn",
+                    "exchName",
+                    "mktSegID",
+                    "UNR_Ch",
+                    "curMktValue",
+                    "qty",
+                    "total_qty",
+                    "astCls",
+                    "details",
+                    "symbolName",
+                    "instName",
+                    "UNR_Chp",
+                    "isin",
+                    "realizedGL",
+                    "partyCode",
+                    "dpholding",
+                    "series",
+                    "priceTick",
+                    "tradeSymbol",
+                    "isCashWithFnO",
+                    "surveyIndicatorTagPresent",
+                    "surveyIndicatorTagShortCode",
+                    "pool_holding",
+                    "cusa",
+                    "pledge",
+                    "margin",
+                    "sector",
+                    "mktCap",
+                    "stkId",
+                    "baseQty",
+                    "baseAvgPrice",
+                    "blockedQty",
+                    "bonusQty",
+                    "bod_free_qty",
+                    "dbq",
+                    "dsq",
+                    "dbap",
+                    "dsap",
+                    "dbq_t1",
+                    "dsq_t1",
+                    "dbap_t1",
+                    "dsap_t1",
+                    "dbq_t0",
+                    "dsq_t0",
+                    "dbap_t0",
+                    "dsap_t0",
+                    "buy_auction_qty",
+                    "event",
+                    "arq",
+                    "prevClose",
+                    "isETF",
+                    "isActive"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "AvlQty": {
+                      "type": "integer"
+                    },
+                    "tokenID": {
+                      "type": "string"
+                    },
+                    "AvlQtyDisp": {
+                      "type": "string"
+                    },
+                    "ch": {
+                      "type": "integer"
+                    },
+                    "avgPrice": {
+                      "type": "number"
+                    },
+                    "CoCode": {
+                      "type": "string"
+                    },
+                    "AsOnDate": {
+                      "type": "string"
+                    },
+                    "ltp": {
+                      "type": "number"
+                    },
+                    "chp": {
+                      "type": "number"
+                    },
+                    "compName": {
+                      "type": "string"
+                    },
+                    "dayGL": {
+                      "type": "number"
+                    },
+                    "invValue": {
+                      "type": "integer"
+                    },
+                    "precsn": {
+                      "type": "integer"
+                    },
+                    "exchName": {
+                      "type": "string"
+                    },
+                    "mktSegID": {
+                      "type": "integer"
+                    },
+                    "UNR_Ch": {
+                      "type": "number"
+                    },
+                    "curMktValue": {
+                      "type": "integer"
+                    },
+                    "qty": {
+                      "type": "integer"
+                    },
+                    "total_qty": {
+                      "type": "integer"
+                    },
+                    "astCls": {
+                      "type": "string"
+                    },
+                    "details": {
+                      "type": "string"
+                    },
+                    "symbolName": {
+                      "type": "string"
+                    },
+                    "instName": {
+                      "type": "string"
+                    },
+                    "UNR_Chp": {
+                      "type": "number"
+                    },
+                    "isin": {
+                      "type": "string"
+                    },
+                    "realizedGL": {
+                      "type": "integer"
+                    },
+                    "partyCode": {
+                      "type": "string"
+                    },
+                    "dpholding": {
+                      "type": "integer"
+                    },
+                    "series": {
+                      "type": "string"
+                    },
+                    "priceTick": {
+                      "type": "string"
+                    },
+                    "tradeSymbol": {
+                      "type": "string"
+                    },
+                    "isCashWithFnO": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagPresent": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagShortCode": {
+                      "type": "string"
+                    },
+                    "pool_holding": {
+                      "type": "integer"
+                    },
+                    "cusa": {
+                      "type": "integer"
+                    },
+                    "pledge": {
+                      "type": "integer"
+                    },
+                    "margin": {
+                      "type": "integer"
+                    },
+                    "sector": {
+                      "type": "string"
+                    },
+                    "mktCap": {
+                      "type": "string"
+                    },
+                    "stkId": {
+                      "type": "string"
+                    },
+                    "baseQty": {
+                      "type": "integer"
+                    },
+                    "baseAvgPrice": {
+                      "type": "number"
+                    },
+                    "blockedQty": {
+                      "type": "integer"
+                    },
+                    "bonusQty": {
+                      "type": "integer"
+                    },
+                    "bod_free_qty": {
+                      "type": "integer"
+                    },
+                    "dbq": {
+                      "type": "integer"
+                    },
+                    "dsq": {
+                      "type": "integer"
+                    },
+                    "dbap": {
+                      "type": "integer"
+                    },
+                    "dsap": {
+                      "type": "integer"
+                    },
+                    "dbq_t1": {
+                      "type": "integer"
+                    },
+                    "dsq_t1": {
+                      "type": "integer"
+                    },
+                    "dbap_t1": {
+                      "type": "integer"
+                    },
+                    "dsap_t1": {
+                      "type": "integer"
+                    },
+                    "dbq_t0": {
+                      "type": "integer"
+                    },
+                    "dsq_t0": {
+                      "type": "integer"
+                    },
+                    "dbap_t0": {
+                      "type": "integer"
+                    },
+                    "dsap_t0": {
+                      "type": "integer"
+                    },
+                    "buy_auction_qty": {
+                      "type": "integer"
+                    },
+                    "event": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "arq": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "prevClose": {
+                      "type": "number"
+                    },
+                    "isETF": {
+                      "type": "boolean"
+                    },
+                    "isActive": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "AvlQty",
+                    "tokenID",
+                    "AvlQtyDisp",
+                    "ch",
+                    "avgPrice",
+                    "CoCode",
+                    "AsOnDate",
+                    "ltp",
+                    "chp",
+                    "compName",
+                    "dayGL",
+                    "invValue",
+                    "precsn",
+                    "exchName",
+                    "mktSegID",
+                    "UNR_Ch",
+                    "curMktValue",
+                    "qty",
+                    "total_qty",
+                    "astCls",
+                    "details",
+                    "symbolName",
+                    "instName",
+                    "UNR_Chp",
+                    "isin",
+                    "realizedGL",
+                    "partyCode",
+                    "dpholding",
+                    "series",
+                    "priceTick",
+                    "tradeSymbol",
+                    "isCashWithFnO",
+                    "surveyIndicatorTagPresent",
+                    "surveyIndicatorTagShortCode",
+                    "pool_holding",
+                    "cusa",
+                    "pledge",
+                    "margin",
+                    "sector",
+                    "mktCap",
+                    "stkId",
+                    "baseQty",
+                    "baseAvgPrice",
+                    "blockedQty",
+                    "bonusQty",
+                    "bod_free_qty",
+                    "dbq",
+                    "dsq",
+                    "dbap",
+                    "dsap",
+                    "dbq_t1",
+                    "dsq_t1",
+                    "dbap_t1",
+                    "dsap_t1",
+                    "dbq_t0",
+                    "dsq_t0",
+                    "dbap_t0",
+                    "dsap_t0",
+                    "buy_auction_qty",
+                    "event",
+                    "arq",
+                    "prevClose",
+                    "isETF",
+                    "isActive"
+                  ]
+                },
+                {
+                  "type": "object",
+                  "properties": {
+                    "AvlQty": {
+                      "type": "integer"
+                    },
+                    "tokenID": {
+                      "type": "string"
+                    },
+                    "AvlQtyDisp": {
+                      "type": "string"
+                    },
+                    "ch": {
+                      "type": "integer"
+                    },
+                    "avgPrice": {
+                      "type": "number"
+                    },
+                    "CoCode": {
+                      "type": "string"
+                    },
+                    "AsOnDate": {
+                      "type": "string"
+                    },
+                    "ltp": {
+                      "type": "number"
+                    },
+                    "chp": {
+                      "type": "number"
+                    },
+                    "compName": {
+                      "type": "string"
+                    },
+                    "dayGL": {
+                      "type": "number"
+                    },
+                    "invValue": {
+                      "type": "integer"
+                    },
+                    "precsn": {
+                      "type": "integer"
+                    },
+                    "exchName": {
+                      "type": "string"
+                    },
+                    "mktSegID": {
+                      "type": "integer"
+                    },
+                    "UNR_Ch": {
+                      "type": "number"
+                    },
+                    "curMktValue": {
+                      "type": "integer"
+                    },
+                    "qty": {
+                      "type": "integer"
+                    },
+                    "total_qty": {
+                      "type": "integer"
+                    },
+                    "astCls": {
+                      "type": "string"
+                    },
+                    "details": {
+                      "type": "string"
+                    },
+                    "symbolName": {
+                      "type": "string"
+                    },
+                    "instName": {
+                      "type": "string"
+                    },
+                    "UNR_Chp": {
+                      "type": "number"
+                    },
+                    "isin": {
+                      "type": "string"
+                    },
+                    "realizedGL": {
+                      "type": "integer"
+                    },
+                    "partyCode": {
+                      "type": "string"
+                    },
+                    "dpholding": {
+                      "type": "integer"
+                    },
+                    "series": {
+                      "type": "string"
+                    },
+                    "priceTick": {
+                      "type": "string"
+                    },
+                    "tradeSymbol": {
+                      "type": "string"
+                    },
+                    "isCashWithFnO": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagPresent": {
+                      "type": "boolean"
+                    },
+                    "surveyIndicatorTagShortCode": {
+                      "type": "string"
+                    },
+                    "pool_holding": {
+                      "type": "integer"
+                    },
+                    "cusa": {
+                      "type": "integer"
+                    },
+                    "pledge": {
+                      "type": "integer"
+                    },
+                    "margin": {
+                      "type": "integer"
+                    },
+                    "sector": {
+                      "type": "string"
+                    },
+                    "mktCap": {
+                      "type": "string"
+                    },
+                    "stkId": {
+                      "type": "string"
+                    },
+                    "baseQty": {
+                      "type": "integer"
+                    },
+                    "baseAvgPrice": {
+                      "type": "number"
+                    },
+                    "blockedQty": {
+                      "type": "integer"
+                    },
+                    "bonusQty": {
+                      "type": "integer"
+                    },
+                    "bod_free_qty": {
+                      "type": "integer"
+                    },
+                    "dbq": {
+                      "type": "integer"
+                    },
+                    "dsq": {
+                      "type": "integer"
+                    },
+                    "dbap": {
+                      "type": "integer"
+                    },
+                    "dsap": {
+                      "type": "integer"
+                    },
+                    "dbq_t1": {
+                      "type": "integer"
+                    },
+                    "dsq_t1": {
+                      "type": "integer"
+                    },
+                    "dbap_t1": {
+                      "type": "integer"
+                    },
+                    "dsap_t1": {
+                      "type": "integer"
+                    },
+                    "dbq_t0": {
+                      "type": "integer"
+                    },
+                    "dsq_t0": {
+                      "type": "integer"
+                    },
+                    "dbap_t0": {
+                      "type": "integer"
+                    },
+                    "dsap_t0": {
+                      "type": "integer"
+                    },
+                    "buy_auction_qty": {
+                      "type": "integer"
+                    },
+                    "event": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "arq": {
+                      "type": "array",
+                      "items": {}
+                    },
+                    "prevClose": {
+                      "type": "number"
+                    },
+                    "isETF": {
+                      "type": "boolean"
+                    },
+                    "isActive": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "AvlQty",
+                    "tokenID",
+                    "AvlQtyDisp",
+                    "ch",
+                    "avgPrice",
+                    "CoCode",
+                    "AsOnDate",
+                    "ltp",
+                    "chp",
+                    "compName",
+                    "dayGL",
+                    "invValue",
+                    "precsn",
+                    "exchName",
+                    "mktSegID",
+                    "UNR_Ch",
+                    "curMktValue",
+                    "qty",
+                    "total_qty",
+                    "astCls",
+                    "details",
+                    "symbolName",
+                    "instName",
+                    "UNR_Chp",
+                    "isin",
+                    "realizedGL",
+                    "partyCode",
+                    "dpholding",
+                    "series",
+                    "priceTick",
+                    "tradeSymbol",
+                    "isCashWithFnO",
+                    "surveyIndicatorTagPresent",
+                    "surveyIndicatorTagShortCode",
+                    "pool_holding",
+                    "cusa",
+                    "pledge",
+                    "margin",
+                    "sector",
+                    "mktCap",
+                    "stkId",
+                    "baseQty",
+                    "baseAvgPrice",
+                    "blockedQty",
+                    "bonusQty",
+                    "bod_free_qty",
+                    "dbq",
+                    "dsq",
+                    "dbap",
+                    "dsap",
+                    "dbq_t1",
+                    "dsq_t1",
+                    "dbap_t1",
+                    "dsap_t1",
+                    "dbq_t0",
+                    "dsq_t0",
+                    "dbap_t0",
+                    "dsap_t0",
+                    "buy_auction_qty",
+                    "event",
+                    "arq",
+                    "prevClose",
+                    "isETF",
+                    "isActive"
+                  ]
+                }
+              ]
+            },
+            "Summary": {
+              "type": "object",
+              "properties": {
+                "TotalHolding": {
+                  "type": "integer"
+                },
+                "TotalInvValue": {
+                  "type": "integer"
+                },
+                "TotalActiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalInactiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalGL": {
+                  "type": "number"
+                },
+                "TotalGLPer": {
+                  "type": "number"
+                },
+                "TotalDayGL": {
+                  "type": "number"
+                },
+                "TotalDayGLPer": {
+                  "type": "number"
+                }
+              },
+              "required": [
+                "TotalHolding",
+                "TotalInvValue",
+                "TotalActiveInvValue",
+                "TotalInactiveInvValue",
+                "TotalGL",
+                "TotalGLPer",
+                "TotalDayGL",
+                "TotalDayGLPer"
+              ]
+            }
+          },
+          "required": [
+            "HoldingDetail",
+            "Summary"
+          ]
+        },
+        "BondsPortfolio": {
+          "type": "object",
+          "properties": {
+            "Summary": {
+              "type": "object",
+              "properties": {
+                "TotalHolding": {
+                  "type": "integer"
+                },
+                "TotalInvValue": {
+                  "type": "integer"
+                },
+                "TotalActiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalInactiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalGL": {
+                  "type": "integer"
+                },
+                "TotalGLPer": {
+                  "type": "integer"
+                },
+                "TotalDayGL": {
+                  "type": "integer"
+                },
+                "TotalDayGLPer": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "TotalHolding",
+                "TotalInvValue",
+                "TotalActiveInvValue",
+                "TotalInactiveInvValue",
+                "TotalGL",
+                "TotalGLPer",
+                "TotalDayGL",
+                "TotalDayGLPer"
+              ]
+            },
+            "HoldingDetail": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "Summary",
+            "HoldingDetail"
+          ]
+        },
+        "SGBPortfolio": {
+          "type": "object",
+          "properties": {
+            "Summary": {
+              "type": "object",
+              "properties": {
+                "TotalHolding": {
+                  "type": "integer"
+                },
+                "TotalInvValue": {
+                  "type": "integer"
+                },
+                "TotalActiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalInactiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalGL": {
+                  "type": "integer"
+                },
+                "TotalGLPer": {
+                  "type": "integer"
+                },
+                "TotalDayGL": {
+                  "type": "integer"
+                },
+                "TotalDayGLPer": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "TotalHolding",
+                "TotalInvValue",
+                "TotalActiveInvValue",
+                "TotalInactiveInvValue",
+                "TotalGL",
+                "TotalGLPer",
+                "TotalDayGL",
+                "TotalDayGLPer"
+              ]
+            },
+            "HoldingDetail": {
+              "type": "array",
+              "items": {}
+            }
+          },
+          "required": [
+            "Summary",
+            "HoldingDetail"
+          ]
+        },
+        "MFPortfolio": {
+          "type": "object",
+          "properties": {
+            "Summary": {
+              "type": "object",
+              "properties": {
+                "TotalHolding": {
+                  "type": "integer"
+                },
+                "TotalInvValue": {
+                  "type": "integer"
+                },
+                "TotalActiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalInactiveInvValue": {
+                  "type": "integer"
+                },
+                "TotalGL": {
+                  "type": "integer"
+                },
+                "TotalGLPer": {
+                  "type": "integer"
+                },
+                "TotalDayGL": {
+                  "type": "integer"
+                },
+                "TotalDayGLPer": {
+                  "type": "integer"
+                }
+              },
+              "required": [
+                "TotalHolding",
+                "TotalInvValue",
+                "TotalActiveInvValue",
+                "TotalInactiveInvValue",
+                "TotalGL",
+                "TotalGLPer",
+                "TotalDayGL",
+                "TotalDayGLPer"
+              ]
+            }
+          },
+          "required": [
+            "Summary"
+          ]
+        },
+        "AdvisoryPortfolio": {
+          "type": "array",
+          "items": {}
+        }
+      },
+      "required": [
+        "TotalSummary",
+        "EquityPortfolio",
+        "BondsPortfolio",
+        "SGBPortfolio",
+        "MFPortfolio",
+        "AdvisoryPortfolio"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "success",
+    "data",
+    "message"
+  ]
+}

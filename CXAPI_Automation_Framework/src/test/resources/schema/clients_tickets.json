@@ -1,0 +1,143 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "array",
+      "items": [
+        {
+          "type": "object",
+          "properties": {
+            "caseNumber": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "ticketOrigin": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "subcategory": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "caseNumber",
+            "createdDate",
+            "subject",
+            "status",
+            "ticketOrigin",
+            "description",
+            "category",
+            "subcategory"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "caseNumber": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "ticketOrigin": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "subcategory": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "caseNumber",
+            "createdDate",
+            "subject",
+            "status",
+            "ticketOrigin",
+            "description",
+            "category",
+            "subcategory"
+          ]
+        },
+        {
+          "type": "object",
+          "properties": {
+            "caseNumber": {
+              "type": "string"
+            },
+            "createdDate": {
+              "type": "string"
+            },
+            "subject": {
+              "type": "string"
+            },
+            "status": {
+              "type": "string"
+            },
+            "ticketOrigin": {
+              "type": "string"
+            },
+            "description": {
+              "type": "string"
+            },
+            "category": {
+              "type": "string"
+            },
+            "subcategory": {
+              "type": "string"
+            }
+          },
+          "required": [
+            "caseNumber",
+            "createdDate",
+            "subject",
+            "status",
+            "ticketOrigin",
+            "description",
+            "category",
+            "subcategory"
+          ]
+        }
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "success",
+    "data",
+    "message"
+  ]
+}

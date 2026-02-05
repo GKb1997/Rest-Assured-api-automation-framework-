@@ -1,0 +1,77 @@
+{
+  "$schema": "http://json-schema.org/draft-04/schema#",
+  "type": "object",
+  "properties": {
+    "status": {
+      "type": "string"
+    },
+    "success": {
+      "type": "boolean"
+    },
+    "data": {
+      "type": "object",
+      "properties": {
+        "totalRecords": {
+          "type": "integer"
+        },
+        "records": {
+          "type": "array",
+          "items": [
+            {
+              "type": "object",
+              "properties": {
+                "id": {
+                  "type": "string"
+                }
+              },
+              "required": [
+                "id"
+              ]
+            }
+          ]
+        },
+        "kyc_info": {
+          "type": "object",
+          "properties": {
+            "isTradeReady": {
+              "type": "boolean"
+            },
+            "kra_info": {
+              "type": "object"
+            },
+            "cdsl_info": {
+              "type": "object"
+            },
+            "nse_info": {
+              "type": "object"
+            },
+            "bse_info": {
+              "type": "object"
+            }
+          },
+          "required": [
+            "isTradeReady",
+            "kra_info",
+            "cdsl_info",
+            "nse_info",
+            "bse_info"
+          ]
+        }
+      },
+      "required": [
+        "totalRecords",
+        "records",
+        "kyc_info"
+      ]
+    },
+    "message": {
+      "type": "string"
+    }
+  },
+  "required": [
+    "status",
+    "success",
+    "data",
+    "message"
+  ]
+}
